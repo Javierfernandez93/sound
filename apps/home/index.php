@@ -1,0 +1,1 @@
+<?php define("TO_ROOT", "../..");require_once TO_ROOT . "/system/core.php";$Layout = JFStudio\Layout::getInstance();$Layout->init("Inicio","index","index");$UserLogin = new Welcome\UserLogin;$Layout->setScriptPath(TO_ROOT . '/src/');$Layout->setScript(['home.css']);$Layout->setVar("UserLogin",$UserLogin);$Layout();?>
